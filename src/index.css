@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+@theme {
+  --color-on-primary-fixed-variant: #354d32;
+  --color-secondary: #50634e;
+  --color-on-error: #ffffff;
+  --color-on-tertiary-container: #f3d0ac;
+  --color-on-secondary-fixed: #0e1f0f;
+  --color-on-surface-variant: #434841;
+  --color-outline-variant: #c3c8be;
+  --color-on-secondary-container: #566954;
+  --color-on-primary-container: #c1debb;
+  --color-on-primary: #ffffff;
+  --color-surface-variant: #e1e3de;
+  --color-primary-fixed: #ceeac7;
+  --color-on-tertiary: #ffffff;
+  --color-primary-fixed-dim: #b2ceac;
+  --color-tertiary-fixed-dim: #e3c19d;
+  --color-inverse-primary: #b2ceac;
+  --color-on-tertiary-fixed-variant: #5a4227;
+  --color-inverse-on-surface: #f0f1ec;
+  --color-surface-container-high: #e7e9e4;
+  --color-inverse-surface: #2e312e;
+  --color-primary-container: #4a6347;
+  --color-surface-tint: #4c6549;
+  --color-tertiary: #584126;
+  --color-surface-bright: #f8faf5;
+  --color-tertiary-fixed: #ffddb9;
+  --color-error: #ba1a1a;
+  --color-surface-container-lowest: #ffffff;
+  --color-primary: #334b31;
+  --color-on-primary-fixed: #09200a;
+  --color-surface-container-highest: #e1e3de;
+  --color-secondary-fixed: #d3e9ce;
+  --color-surface-container: #edeee9;
+  --color-on-background: #191c19;
+  --color-on-error-container: #93000a;
+  --color-on-secondary: #ffffff;
+  --color-on-tertiary-fixed: #291802;
+  --color-secondary-fixed-dim: #b7ccb3;
+  --color-secondary-container: #d3e9ce;
+  --color-surface-container-low: #f3f4ef;
+  --color-tertiary-container: #72583b;
+  --color-outline: #737970;
+  --color-error-container: #ffdad6;
+  --color-surface: #f8faf5;
+  --color-on-surface: #191c19;
+  --color-background: #f8faf5;
+  --color-on-secondary-fixed-variant: #394b38;
+  --color-surface-dim: #d9dbd6;
+
+  --font-display: "Newsreader", "Songti SC", serif;
+  --font-display-mobile: "Newsreader", "Songti SC", serif;
+  --font-headline-lg: "Newsreader", "Songti SC", serif;
+  --font-headline-lg-mobile: "Newsreader", "Songti SC", serif;
+  --font-headline-md: "Newsreader", "Songti SC", serif;
+  --font-headline-sm: "Newsreader", "Songti SC", serif;
+  --font-body-lg: "Manrope", "PingFang SC", sans-serif;
+  --font-body-md: "Manrope", "PingFang SC", sans-serif;
+  --font-body-sm: "Manrope", "PingFang SC", sans-serif;
+  --font-label-md: "Manrope", "PingFang SC", sans-serif;
+  --font-label-sm: "Manrope", "PingFang SC", sans-serif;
+
+  --text-display: 4.5rem;
+  --text-display--line-height: 5rem;
+  --text-display--letter-spacing: -0.025em;
+  --text-display--font-weight: 400;
+  --text-display-mobile: 2.75rem;
+  --text-display-mobile--line-height: 3.25rem;
+  --text-display-mobile--letter-spacing: -0.02em;
+  --text-display-mobile--font-weight: 400;
+  --text-headline-lg: 3rem;
+  --text-headline-lg--line-height: 3.5rem;
+  --text-headline-lg--letter-spacing: -0.02em;
+  --text-headline-lg--font-weight: 400;
+  --text-headline-lg-mobile: 2rem;
+  --text-headline-lg-mobile--line-height: 2.5rem;
+  --text-headline-lg-mobile--letter-spacing: -0.01em;
+  --text-headline-lg-mobile--font-weight: 400;
+  --text-headline-md: 2rem;
+  --text-headline-md--line-height: 2.5rem;
+  --text-headline-md--letter-spacing: -0.015em;
+  --text-headline-md--font-weight: 400;
+  --text-headline-sm: 1.5rem;
+  --text-headline-sm--line-height: 2rem;
+  --text-headline-sm--letter-spacing: -0.01em;
+  --text-headline-sm--font-weight: 500;
+  --text-body-lg: 1.125rem;
+  --text-body-lg--line-height: 1.875rem;
+  --text-body-lg--letter-spacing: -0.005em;
+  --text-body-lg--font-weight: 400;
+  --text-body-md: 1rem;
+  --text-body-md--line-height: 1.65rem;
+  --text-body-md--letter-spacing: 0em;
+  --text-body-md--font-weight: 400;
+  --text-body-sm: 0.875rem;
+  --text-body-sm--line-height: 1.45rem;
+  --text-body-sm--letter-spacing: 0.01em;
+  --text-body-sm--font-weight: 400;
+  --text-label-md: 0.8125rem;
+  --text-label-md--line-height: 1.125rem;
+  --text-label-md--letter-spacing: 0.06em;
+  --text-label-md--font-weight: 600;
+  --text-label-sm: 0.6875rem;
+  --text-label-sm--line-height: 0.95rem;
+  --text-label-sm--letter-spacing: 0.08em;
+  --text-label-sm--font-weight: 600;
+
+  --radius: 1rem;
+  --radius-lg: 2rem;
+  --radius-xl: 3rem;
+
+  --spacing-space-xl: 3.5rem;
+  --spacing-space-xs: 0.375rem;
+  --spacing-margin: 4rem;
+  --spacing-gutter-mobile: 1rem;
+  --spacing-space-lg: 2rem;
+  --spacing-space-md: 1.25rem;
+  --spacing-space-sm: 0.75rem;
+  --spacing-gutter: 2rem;
+  --spacing-margin-mobile: 1.5rem;
+}
+
+.rounded-DEFAULT {
+  border-radius: 1rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f8faf5;
+  color: #191c19;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  line-height: 1;
+  user-select: none;
+}
+
+@media (max-width: 767px) {
+  .text-display {
+    font-size: 2.75rem;
+    line-height: 3.25rem;
+    letter-spacing: -0.02em;
+  }
+
+  .text-headline-lg {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
